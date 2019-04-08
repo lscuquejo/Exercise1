@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit4beb7c2628086ce0995ab2d26c6aea1c
+class ComposerStaticInit497939cac6a424c3cc1a6f38b18aca7a
 {
     public static $files = array (
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
@@ -35,8 +35,8 @@ class ComposerStaticInit4beb7c2628086ce0995ab2d26c6aea1c
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -615,10 +615,10 @@ class ComposerStaticInit4beb7c2628086ce0995ab2d26c6aea1c
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit4beb7c2628086ce0995ab2d26c6aea1c::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit4beb7c2628086ce0995ab2d26c6aea1c::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit4beb7c2628086ce0995ab2d26c6aea1c::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit4beb7c2628086ce0995ab2d26c6aea1c::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit497939cac6a424c3cc1a6f38b18aca7a::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit497939cac6a424c3cc1a6f38b18aca7a::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit497939cac6a424c3cc1a6f38b18aca7a::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit497939cac6a424c3cc1a6f38b18aca7a::$classMap;
 
         }, null, ClassLoader::class);
     }

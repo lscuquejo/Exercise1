@@ -14,7 +14,7 @@ function from($date)
 
     $newdate = $dateInSec + $duration;
 
-    return date('Y-m-d H:i:s',$newdate);
+    return new DateTimeImmutable('Y-m-d H:i:s',$newdate);
 
 //atempt1
 //
