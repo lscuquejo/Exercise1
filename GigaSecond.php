@@ -4,8 +4,6 @@
 function from($date)
 {
 
-    $date = "2011-04-25 00:00:00";
-
     $duration = "1000000000";
 
     //    $duration = "31-9-09 01:46:40";
