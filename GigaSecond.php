@@ -1,20 +1,17 @@
 <?php
 
-
 function from($date)
 {
 
-    $duration = "1000000000";
+    $d = clone($date);
 
-    //    $duration = "31-9-09 01:46:40";
+    $gigasecond = new DateInterval("PT1000000000S");
 
-    $dateInSec = strtotime($date);
+    return $d->add($gigasecond);
 
-    $newdate = $dateInSec + $duration;
+}
 
-    return new DateTimeImmutable('Y-m-d H:i:s',$newdate);
-
-//atempt1
+//attempt1
 //
 //        $b = new DateTime("31-9-09 01:46:40");
 
@@ -25,7 +22,7 @@ function from($date)
 //        return $a->diff($b);
 
 
-//atempt2
+//attempt2
 
 //        define("GIGASECOND", 1000000000);
 //
@@ -34,7 +31,7 @@ function from($date)
 //        return $result + GIGASECOND;
 
 
-//atempt3
+//attempt3
 
 //        $gigasecond = 1000000000;
 //
@@ -45,7 +42,7 @@ function from($date)
 //        return (string)$result;
 
 
-//atempt4
+//attempt4
 
 //        $newdate = strtotime ( '+1 year' , strtotime ( $date ) ) ;
 //
@@ -54,5 +51,35 @@ function from($date)
 //        return $newdate;
 
 
-}
+
+//attempt5
+//const GIGA_SECOND = 1000000000;
+//
+//function from($date)
+//{
+//    //    $duration = "31-9-09 01:46:40";
+//
+//    var_dump($date);
+//
+//    $newdate = $date + GIGA_SECOND;
+//
+//    return new DateTimeImmutable($newdate);
+
+
+
+//attempt6
+//
+//if ($date->date == "2015-01-24 00:00:00.000000"){
+//
+//  $gigasecondfake = new DateInterval("PT123123123123S");
+//
+//return $date->add($gigasecondfake);
+//
+////} else {
+//
+//$gigasecond = new DateInterval("PT1000000000S");
+//
+//return $date->add($gigasecond);
+//
+////}
 
